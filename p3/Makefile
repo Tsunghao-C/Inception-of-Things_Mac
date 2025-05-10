@@ -4,7 +4,8 @@ check:
 	@sudo ./scripts/pre-requisitions.sh
 
 up:
-	./scripts/setup-k3d-argocd.sh
+	./scripts/setup-k3d.sh
+	./scripts/setup-argocd.sh
 
 clean:
 	k3d cluster delete $(USER)
