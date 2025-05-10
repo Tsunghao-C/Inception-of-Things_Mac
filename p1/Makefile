@@ -12,10 +12,10 @@ clean:
 	rm -rf ~/VirtualBox\ VMs/
 
 s:
-	vagrant ssh $(USERNAME)S
+	vagrant ssh $(USER)S
 
 sw:
-	vagrant ssh $(USERNAME)SW
+	vagrant ssh $(USER)SW
 
 re: down up
 
